@@ -7,7 +7,8 @@ $new-theme-colors: (
   // "color-name": #color
   "black": #141414,
   "white": #e5e5e5,
-  "gray": #7f7f7f
+  "gray": #7f7f7f,
+  "lightg": #e2e2e2
 );
 
 $theme-colors: map-merge($theme-colors, $new-theme-colors);
