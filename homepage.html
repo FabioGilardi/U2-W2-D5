@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- LA PAGINA EDIT E' COLLEGATA TRAMITE IL TASTINO EDIT DENTRO L'AVATAR -->
+    <!-- MANCA IL CAROSELLO CHE PER QUALCHE MI ROMPEVA LA PAGINA -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <img
+          src="./assets/netflix_logo.png"
+          alt="netflix-logo"
+          id="logo"
+          class="me-3"
+        />
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#"
+                >TV Shows</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Movie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >Recently Added</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >My List</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex bg-black" role="search">
+            <input
+              id="search-bar"
+              class="form-control bg-black"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn text-white" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <!-- LAST 3 NAVBAR -->
+          <div
+            class="d-flex justify-content-end align-items-center mt-3 mt-lg-0"
+          >
+            <img
+              src="./assets/kids_icon.png"
+              alt="kids-icon"
+              style="width: 40px"
+              class="mx-2"
+            />
+            <span class="mx-2"><i class="bi bi-bell-fill text-white"></i></span>
+            <div class="dropdown me-2">
+              <a
+                class="btn btn-black dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/avatar.png" alt="user avatar" id="avatar" />
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                <li>
+                  <a
+                    class="dropdown-item text-white"
+                    href="./edit.html"
+                    target="_blank"
+                    ><i class="bi bi-pencil-fill"></i> Edit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#" target="_blank"
+                    ><i class="bi bi-gear-fill"></i> Settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between px-2 px-md-0 mt-3">
+            <div class="d-flex align-items-center">
+              <h1 class="text-white me-4">TW Shows</h1>
+              <div class="dropdown">
+                <button
+                  class="btn btn-black border-white dropdown-toggle fw-bold rounded-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark bg-black">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Drama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Horror</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <span class="text-white border border-white p-1"
+                ><i class="bi bi-list"></i
+              ></span>
+              <span class="text-white border border-gray text-opacity-50 p-1"
+                ><i class="bi bi-grid-fill"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-black py-5">
+      <!-- TRENDING SECTION -->
+      <div class="container">
+        <h4 class="px-0 text-white">Trending Now</h4>
+        <div class="row row-cols-lg-6 row-cols-md-4 row-cols-2 gx-1">
+          <div class="col">
+            <img src="./assets/media/media0.webp" alt="tw show" />
+          </div>
+          <div class="col">
+            <img src="./assets/media/media21.webp" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media2.webp" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media3.webp" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media4.jpg" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media5.webp" alt="tw show" />
+          </div>
+        </div>
+      </div>
+      <!-- WATCH AGAIN SECTION -->
+      <div class="container my-5">
+        <h4 class="px-0 text-white">Watch it Again</h4>
+        <div class="row row-cols-lg-6 row-cols-md-4 row-cols-2 gx-1">
+          <div class="col">
+            <img src="./assets/media/media6.jpg" alt="tw show" />
+          </div>
+          <div class="col">
+            <img src="./assets/media/media7.webp" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media8.webp" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media9.jpg" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media10.jpg" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media11.jpg" alt="tw show" />
+          </div>
+        </div>
+      </div>
+      <!-- NEW RELEASES SECTION -->
+      <div class="container my-5">
+        <h4 class="px-0 text-white">New Releases</h4>
+        <div class="row row-cols-lg-6 row-cols-md-4 row-cols-2 gx-1">
+          <div class="col">
+            <img src="./assets/media/media12.jpg" alt="tw show" />
+          </div>
+          <div class="col">
+            <img src="./assets/media/media13.jpg" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media14.webp" alt="tw show" />
+          </div>
+          <div class="col py-2 py-md-0">
+            <img src="./assets/media/media15.jpg" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media16.webp" alt="tw show" />
+          </div>
+          <div class="col d-md-none d-lg-block">
+            <img src="./assets/media/media17.jpg" alt="tw show" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black">
+      <div class="container px-5">
+        <div class="row">
+          <div class="col-12 px-0">
+            <span class="text-gray fs-2 mx-2"
+              ><i class="bi bi-facebook"></i
+            ></span>
+            <span class="text-gray fs-2 mx-2"
+              ><i class="bi bi-instagram"></i
+            ></span>
+            <span class="text-gray fs-2 mx-2"
+              ><i class="bi bi-twitter"></i
+            ></span>
+            <span class="text-gray fs-2 mx-2"
+              ><i class="bi bi-youtube"></i
+            ></span>
+          </div>
+        </div>
+        <div class="row row-cols-lg-4 py-3">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="text-gray">Audio and Subtitles</li>
+              <li class="text-gray">Media Center</li>
+              <li class="text-gray">Privacy</li>
+              <li class="text-gray">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="text-gray">Audio Description</li>
+              <li class="text-gray">Investor Relations</li>
+              <li class="text-gray">Legal Notices</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="text-gray">Help Center</li>
+              <li class="text-gray">Jobs</li>
+              <li class="text-gray">Cookie Preference</li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="text-gray">Gift Cards</li>
+              <li class="text-gray">Terms of Use</li>
+              <li class="text-gray">Corporate Information</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-cols-1">
+          <div class="col">
+            <button
+              class="btn btn-black btn-sm border-gray text-gray rounded-0"
+            >
+              Service Code
+            </button>
+            <p id="small" class="text-gray my-3">© 1997 - 2019 Netlix, Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

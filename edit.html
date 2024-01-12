@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="container-fluid bg-black">
+      <img src="./assets/netflix_logo.png" alt="netflix-logo" id="logo" />
+    </header>
+    <main class="bg-black py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-12">
+            <h1 class="text-white pb-2 border-bottom border-gray">
+              Edit Profile
+            </h1>
+            <div class="row">
+              <div class="col-3">
+                <div class="position-relative">
+                  <img src="./assets/avatar.png" alt="user-avatar" />
+                  <span
+                    class="bg-black text-white rounded-circle border border-white p-1 position-absolute pos"
+                    ><i class="bi bi-pencil-fill"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-9">
+                <form id="my-form">
+                  <!-- FIRST SECTION -->
+                  <h4 class="text-white bg-gray fs-5 p-2">Strive Student</h4>
+                  <p class="text-gray fw-bolder mt-4 mb-2">Language:</p>
+                  <select
+                    class="form-select d-inline-block bg-black text-white rounded-0 dropdown-menu-dark"
+                    aria-label="Default select example"
+                    style="width: 30%"
+                  >
+                    <option selected></option>
+                    <option value="1">English</option>
+                    <option value="2">Italiano</option>
+                    <option value="3">Deutsch</option>
+                    <option value="3">Espanol</option>
+                  </select>
+                  <!-- SECOND SECTION -->
+                  <p
+                    class="text-gray fw-bolder mt-4 mb-2 pt-4 border-top border-gray"
+                  >
+                    Maturity Settings:
+                  </p>
+                  <p class="bg-dark text-white d-inline-block px-3 fw-bolder">
+                    ALL MATURITY RATINGS
+                  </p>
+                  <p class="text-white small-edit">
+                    Show title af all maturity ratings in this profile
+                  </p>
+                  <button
+                    class="btn btn-black border border-gray btn-sm px-4 letter-spaced rounded-0"
+                    type="button"
+                  >
+                    EDIT
+                  </button>
+                  <!-- THIRD SECTION -->
+                  <p
+                    class="text-gray fw-bolder mt-4 pt-4 border-top border-gray"
+                  >
+                    Autoplay controls:
+                  </p>
+                  <div class="form-check d-flex align-items-center">
+                    <input
+                      class="form-check-input bg-black rounded-0"
+                      type="checkbox"
+                      value=""
+                      id="defaultCheck1"
+                    />
+                    <label
+                      class="form-check-label text-white small-edit ms-2"
+                      for="defaultCheck1"
+                    >
+                      Autoplay next episodes in a series on all devices
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input
+                      class="form-check-input bg-black rounded-0"
+                      type="checkbox"
+                      value=""
+                      id="defaultCheck2"
+                    />
+                    <label
+                      class="form-check-label text-white small-edit ms-2"
+                      for="defaultCheck2"
+                    >
+                      Autoplay previous while browsing on all devices
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <!-- I BOTTONI SAVE E CANCEL SONO COLLEGATI AL FORM -->
+              <div
+                class="col-12 mt-2 py-4 border-top border-gray d-flex justify-content-center"
+              >
+                <button
+                  class="btn btn-white border border-black px-4 text-black letter-spaced fw-bolder rounded-0"
+                  type="submit"
+                  form="my-form"
+                >
+                  SAVE
+                </button>
+                <button
+                  class="btn btn-black border border-gray px-4 text-gray letter-spaced mx-3 rounded-0"
+                  form="my-form"
+                >
+                  CANCEL
+                </button>
+                <button
+                  class="btn btn-black border border-gray px-4 text-gray letter-spaced rounded-0"
+                >
+                  DELETE PROFILE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
